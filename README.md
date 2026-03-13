@@ -1,6 +1,6 @@
 # Pipeline Pioneers: Intelligent CI/CD Automation Platform
 
-## 1️⃣ What Is the Problem?
+##  What Is the Problem?
 
 In many companies, software deployment is slow and error-prone.
 
@@ -12,17 +12,17 @@ Traditional process:
 - If something fails → system crashes
 
 Problems:
-- ❌ Human errors
-- ❌ Slow releases
-- ❌ Difficult debugging
-- ❌ Downtime in production
-- ❌ No monitoring
+-  Human errors
+-  Slow releases
+-  Difficult debugging
+-  Downtime in production
+-  No monitoring
 
 Modern companies like Google, Amazon, Netflix solve this using CI/CD pipelines.
 
 Your project demonstrates how this automation works.
 
-## 2️⃣ What Is CI/CD?
+##  What Is CI/CD?
 
 CI/CD stands for:
 
@@ -48,7 +48,7 @@ The system automatically:
 
 Goal: Deliver software faster and safely.
 
-## 3️⃣ Objective of the Project
+##  Objective of the Project
 
 The goal of Pipeline Pioneers is to build a fully automated DevOps pipeline that:
 - ✔ Detects code changes
@@ -58,11 +58,11 @@ The goal of Pipeline Pioneers is to build a fully automated DevOps pipeline that
 - ✔ Monitors application health
 - ✔ Rolls back if deployment fails
 
-## 4️⃣ Core Components of the Project
+## Core Components of the Project
 
 Your system will include 6 major components.
 
-## 5️⃣ Component 1: Version Control (GitHub)
+##  Component 1: Version Control (GitHub)
 
 Developers store code in GitHub repository.
 
@@ -84,7 +84,7 @@ Purpose:
 - ✔ Enable collaboration
 - ✔ Trigger pipeline automation
 
-## 6️⃣ Component 2: Continuous Integration Server
+##  Component 2: Continuous Integration Server
 
 This is the brain of the pipeline.
 
@@ -106,7 +106,7 @@ Pipeline stages:
 - Run automated tests
 - Analyze code quality
 
-## 7️⃣ Component 3: Automated Testing
+##  Component 3: Automated Testing
 
 Testing ensures the application works correctly.
 
@@ -124,7 +124,7 @@ Purpose:
 - ✔ Catch bugs early
 - ✔ Prevent broken code from deploying
 
-## 8️⃣ Component 4: Code Quality Analysis
+##  Component 4: Code Quality Analysis
 
 Before deployment, your system checks:
 - ✔ Code duplication
@@ -143,7 +143,7 @@ SonarQube scan → Quality report generated
 
 This is something many college projects do not include, which makes yours more advanced.
 
-## 9️⃣ Component 5: Containerization (Docker)
+##  Component 5: Containerization (Docker)
 
 Instead of running apps directly on servers, modern systems use containers.
 
@@ -163,7 +163,7 @@ Benefits:
 - ✔ Easy deployment
 - ✔ Faster scaling
 
-## 🔟 Component 6: Deployment
+## Component 6: Deployment
 
 Once the build is successful, the system automatically deploys the application.
 
@@ -182,15 +182,15 @@ Tools:
 - Docker
 - Kubernetes (optional)
 
-## 1️⃣1️⃣ Monitoring System
+##  Monitoring System
 
 After deployment, the system monitors the application.
 
 Metrics monitored:
-- 📊 CPU usage
-- 📊 Memory usage
-- 📊 Response time
-- 📊 Error rate
+- CPU usage
+-  Memory usage
+-  Response time
+-  Error rate
 
 Tools:
 - Prometheus
@@ -206,7 +206,7 @@ Benefits:
 - ✔ Detect performance issues
 - ✔ Identify failures quickly
 
-## 1️⃣2️⃣ Automatic Rollback System
+##  Automatic Rollback System
 
 This is a very powerful feature.
 
@@ -227,7 +227,7 @@ Benefits:
 - ✔ Prevents downtime
 - ✔ Ensures system stability
 
-## 1️⃣3️⃣ Real-Time Dashboard
+##  Real-Time Dashboard
 
 Your system will display:
 - Pipeline progress
@@ -247,9 +247,8 @@ Build Status : SUCCESS
 Deployment : RUNNING
 CPU Usage : 35%
 Errors : 0
-```
-
-## 1️⃣4️⃣ Complete Project Workflow
+``
+##  Complete Project Workflow
 
 Full system flow:
 
@@ -289,7 +288,7 @@ Monitor Application
 Rollback if Failure
 ```
 
-## 1️⃣5️⃣ System Architecture (High Level)
+##  System Architecture (High Level)
 
 ```
 Developer
@@ -309,7 +308,7 @@ Monitoring (Prometheus + Grafana)
 Dashboard Interface
 ```
 
-## 1️⃣6️⃣ Expected Output
+##  Expected Output
 
 Your project will demonstrate:
 - ✔ Automated code integration
@@ -320,7 +319,7 @@ Your project will demonstrate:
 
 Essentially, you will build a mini DevOps automation platform.
 
-## 1️⃣7️⃣ Real-World Use Cases
+## Real-World Use Cases
 
 Companies use CI/CD pipelines for:
 - Software deployment
@@ -333,7 +332,7 @@ Examples:
 - Amazon DevOps pipelines
 - Google cloud deployment
 
-## 1️⃣8️⃣ Advantages of Your System
+##  Advantages of Your System
 
 - ✔ Faster software delivery
 - ✔ Reduced human errors
@@ -341,7 +340,7 @@ Examples:
 - ✔ Continuous monitoring
 - ✔ Automatic recovery
 
-## 1️⃣9️⃣ Future Improvements
+##  Future Improvements
 
 You can extend the project by adding:
 - AI bug prediction
