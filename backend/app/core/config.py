@@ -2,7 +2,7 @@ from pydantic_settings import BaseSettings
 
 class Settings(BaseSettings):
     PROJECT_NAME: str = "Pipeline Pioneers API"
-    DATABASE_URL: str = "postgresql://admin:password@localhost:5432/pipeline_pioneers"
+    DATABASE_URL: str = "sqlite:///./pipeline_pioneers.db"
 
     class Config:
         env_file = ".env"
