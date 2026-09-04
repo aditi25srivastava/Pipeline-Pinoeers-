@@ -100,3 +100,5 @@ Pipeline Pioneers sits around the CI/CD tools and coordinates them as a central 
 
 ## 7. What makes it "Intelligent"?
 Rule-based decision making (e.g., IF health check fails → ROLLBACK). Future scope includes a Deployment Risk Score based on test coverage, past failures, etc.
+
+LIVE DEMO :- https://pipeline-frontend-vcry.onrender.com/
