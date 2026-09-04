@@ -29,12 +29,14 @@ export function Header({
 
   const handleDeploy = async () => {
     try {
-      const res = await fetch("http://localhost:8000/api/projects");
+      const API_URL = import.meta.env.VITE_API_URL || "http://localhost:8000";
+      const res = await fetch(`${API_URL}/api/projects`);
       const projects = await res.json();
       const project = projects.find((p: any) => p.name === "ecommerce/api") || projects[0];
       
       if (project) {
-        const triggerRes = await fetch(`http://localhost:8000/api/projects/${project.id}/trigger`, {
+        const API_URL = import.meta.env.VITE_API_URL || "http://localhost:8000";
+        const triggerRes = await fetch(`${API_URL}/api/projects/${project.id}/trigger`, {
           method: "POST"
         });
         const triggerData = await triggerRes.json();
@@ -57,12 +59,14 @@ export function Header({
 
   const handleSimulateFailure = async () => {
     try {
-      const res = await fetch("http://localhost:8000/api/projects");
+      const API_URL = import.meta.env.VITE_API_URL || "http://localhost:8000";
+      const res = await fetch(`${API_URL}/api/projects`);
       const projects = await res.json();
       const project = projects.find((p: any) => p.name === "ecommerce/api") || projects[0];
 
       if (project) {
-        const triggerRes = await fetch(`http://localhost:8000/api/projects/${project.id}/simulate-failure`, {
+        const API_URL = import.meta.env.VITE_API_URL || "http://localhost:8000";
+        const triggerRes = await fetch(`${API_URL}/api/projects/${project.id}/simulate-failure`, {
           method: "POST"
         });
         const triggerData = await triggerRes.json();

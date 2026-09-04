@@ -6,7 +6,8 @@ export function ActivityFeed() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("http://localhost:8000/api/activities", { cache: "no-store" })
+    const API_URL = import.meta.env.VITE_API_URL || "http://localhost:8000";
+    fetch(`${API_URL}/api/activities`, { cache: "no-store" })
       .then(res => res.json())
       .then(data => {
         setActivities(data);

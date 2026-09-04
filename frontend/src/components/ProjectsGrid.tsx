@@ -27,7 +27,8 @@ export function ProjectsGrid({ animationsEnabled = true }: { animationsEnabled?:
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("http://localhost:8000/api/projects")
+    const API_URL = import.meta.env.VITE_API_URL || "http://localhost:8000";
+    fetch(`${API_URL}/api/projects`)
       .then(res => res.json())
       .then(data => {
         setProjects(data);

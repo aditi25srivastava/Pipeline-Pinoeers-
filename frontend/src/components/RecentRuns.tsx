@@ -6,7 +6,8 @@ export function RecentRuns() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("http://localhost:8000/api/runs")
+    const API_URL = import.meta.env.VITE_API_URL || "http://localhost:8000";
+    fetch(`${API_URL}/api/runs`)
       .then(res => res.json())
       .then(data => {
         setRecentRuns(data);

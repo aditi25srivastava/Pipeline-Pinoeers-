@@ -80,7 +80,8 @@ export function StatCards() {
   const [statsData, setStatsData] = useState<any>(null);
 
   useEffect(() => {
-    fetch("http://localhost:8000/api/stats")
+    const API_URL = import.meta.env.VITE_API_URL || "http://localhost:8000";
+    fetch(`${API_URL}/api/stats`)
       .then(res => res.json())
       .then(data => setStatsData(data))
       .catch(err => console.error(err));
