@@ -11,13 +11,13 @@ Base.metadata.create_all(bind=engine)
 # Seed database if empty
 db = SessionLocal()
 if db.query(models.Project).count() == 0:
-    p1 = models.Project(name="ecommerce/api", description="Main backend API", status="healthy", health_score=98)
-    p2 = models.Project(name="payments/service", description="Payment gateway", status="deploying", health_score=85)
+    p1 = models.Project(name="ecommerce/api", environment="PROD", status="healthy")
+    p2 = models.Project(name="payments/service", environment="STG", status="healthy")
     db.add_all([p1, p2])
     db.commit()
     
-    r1 = models.PipelineRun(project_id=p1.id, version="v1.4.2", status="completed", commit_sha="a1b2c3d", commit_message="Fix checkout bug", author_name="Aditi")
-    r2 = models.PipelineRun(project_id=p2.id, version="v2.0.1", status="running", commit_sha="e5f6g7h", commit_message="Update Stripe SDK", author_name="System")
+    r1 = models.PipelineRun(project_id=p1.id, version="v1.4.2", status="success", commit_sha="a1b2c3d", commit_message="Fix checkout bug", author_name="Aditi")
+    r2 = models.PipelineRun(project_id=p2.id, version="v2.0.1", status="active", commit_sha="e5f6g7h", commit_message="Update Stripe SDK", author_name="System")
     db.add_all([r1, r2])
     
     a1 = models.Activity(user_name="Aditi", action="deployed to production", target="ecommerce/api")
